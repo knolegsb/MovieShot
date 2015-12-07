@@ -1,0 +1,3 @@
+# MovieShot
+
+using initializer boilerplate
