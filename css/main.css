@@ -56,10 +56,27 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.navbar-default{
+    box-shadow: none;
+    background-color: transparent;
+    border: none;
+    min-height: 90px;
+    padding-top: 20px;
+}
 
+.nav > li > a {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 1.3em;
+    text-shadow: 1px 1px 1px black;
+    -webkit-text-shadow: 1px 1px 1px black;
+    -moz-text-shadow: 1px 1px 1px black;
+}
 
-
-
+.nav > li > a:hover,
+.nav > li> a:focus {
+    background-color: transparent;
+}
 
 
 
