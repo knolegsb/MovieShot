@@ -204,16 +204,29 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4">
-                        <img class="img-responsive" src="img/tickets.png" alt="" />
+                        <a href="#modal" data-toggle="modal" data-image-url="img/tickets.png">
+                            <img class="img-responsive" src="img/tickets.png" alt="" />
+                        </a>
                     </div>
                     <div class="col-sm-4">
-                        <img class="img-responsive" src="img/trailers.png" alt="" />
+                        <a href="#modal" data-toggle="modal" data-image-url="img/trailers.png">
+                            <img class="img-responsive" src="img/trailers.png" alt="" />
+                        </a>
                     </div>
                     <div class="col-sm-4">
-                        <img class="img-responsive" src="img/points.png" alt="" />
+                        <a href="#modal" data-toggle="modal" data-image-url="img/points.png">
+                            <img class="img-responsive" src="img/points.png" alt="" />
+                        </a>
                     </div>                
                 </div> <!-- ./row-->
             </div> <!-- ./container-->
+
+        <div id="modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-body">
+                <img src="#" />
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+            </div>
+        </div>
         </section> <!-- #screenshots-->
             
         <section id="parallax" class="parallax">
