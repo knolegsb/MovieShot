@@ -53,8 +53,28 @@ textarea {
 
 
 /* ==========================================================================
-   Author's custom styles
+   styles
    ========================================================================== */
+
+body > section {
+    clear: both;
+    padding: 50px 0;
+}
+
+h2, h3 {
+    color: #15365b;
+    margin-bottom: 30px;
+}
+
+h2:after,
+h3:after {
+    content: "";
+    height: 5px;
+    width: 40px;
+    background-color: #15365b;
+    display: block;
+    margin: 0 auto;
+}
 
 .navbar-default{
     box-shadow: none;
@@ -78,13 +98,30 @@ textarea {
     background-color: transparent;
 }
 
+section#slider{
+    background: rgb(30, 61,90);
+    min-height: 700px;
+    padding: 100px 0;
+}
 
+section#slider img{
+    margin: 0 auto;
+}
 
+.blue-circle {
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: #15365b;
+    border-radius:50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    margin: 0 auto;
+}
 
-
-
-
-
+#about .blue-circle{
+    width: 50%;
+    padding-bottom: 50%;
+}
 
 
 /* ==========================================================================
