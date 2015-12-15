@@ -214,6 +214,74 @@ section#download .platforms > div {
     color: #0c243d;
 }
 
+section#support {
+    padding-bottom: 0;
+    background-color: #1a3d61;
+}
+
+section#support h2 {
+    color: #ffffff;
+}
+
+section#support h2:after {
+    background-color: #ffffff;
+}
+
+section#support p{
+    font-size: 1.6em;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+section#support input,
+section#support textarea {
+    min-height: 50px;
+    margin-bottom: 20px;
+    background-color: #1a3d61;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    color:#ffffff;
+}
+
+section#support textarea{
+    min-height: 200px;
+}
+
+section#support input.btn {
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 5px 50px;
+    font-size: 1.4em;
+    color: #1a3d61;
+}
+
+::-webkit-input-placeholder {
+    color: #ffffff !important;
+}
+
+:moz-placeholder {
+    color: #ffffff !important;
+}
+
+:moz-placeholder {
+    color: #ffffff !important;
+}
+
+::moz-placeholder {
+    color: #ffffff !important;
+}
+
+:ms-placeholder {
+    color: #ffffff !important;
+}
+
+footer p {
+    background-color: #102745;
+    padding: 10px 0;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
