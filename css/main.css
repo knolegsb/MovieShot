@@ -87,6 +87,14 @@ h3:after {
     border: none;
     min-height: 90px;
     padding-top: 20px;
+    transition: 1s all ease;
+}
+
+.effect {
+    background-color: #123156;
+    min-height: 30px;
+    box-shadow: 0 0 10px black;
+    padding-top: 0;    
 }
 
 .nav > li > a {
@@ -121,6 +129,24 @@ section#slider img{
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     margin: 0 auto;
+}
+
+.blue-circle div {
+    float: left;
+    width: 100%;
+    padding-top: 45%;
+    line-height: 1em;
+    margin-top: -0.5em;
+    text-align: center;
+    color: #ffffff;
+}
+
+.blue-circle div i {
+    font-size: 3em;
+}
+
+#features .blue-circle div i {
+    font-size: 2em;
 }
 
 #about .blue-circle{
@@ -212,6 +238,13 @@ section#download .platforms > div {
     position: relative;
     padding-left: 50px;
     color: #0c243d;
+}
+
+section#download .platforms i {
+    font-size: 2.5em;
+    position: absolute;
+    left: 20px;
+    top: 12px;
 }
 
 section#support {
