@@ -62,6 +62,8 @@ body > section {
 }
 
 h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     color: #15365b;
     margin-bottom: 30px;
 }
@@ -98,12 +100,19 @@ h3:after {
 }
 
 .nav > li > a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
     font-size: 1.3em;
     text-shadow: 1px 1px 1px black;
     -webkit-text-shadow: 1px 1px 1px black;
     -moz-text-shadow: 1px 1px 1px black;
+}
+
+.nav > li.active {
+    background-color: #08192d;
+    transition: 1.3s all ease;
 }
 
 .nav > li > a:hover,
