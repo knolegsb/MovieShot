@@ -425,7 +425,10 @@ footer p {
     section#download .download-empty{
         position: relative;
     }
-
+    section#parallax{
+        /*background-attachment: fixed;*/
+        background-attachment: scroll;
+    }
     section#download .download{
         top: 600px;
         z-index: 10;
