@@ -23,6 +23,47 @@ $(document).ready(function () {
             nav.removeClass('effect');
         }
     });
+
+    $('#about .blue-circle').waypoint(function () {
+        $('#about .blue-circle').addClass('animated fadeInUp')
+        //.one('webkitAnimationEnd', function () {
+        //    $(this).removeClass('animated fadeInUp');
+        //})
+    }, {
+        offset: '50%'
+    });
+
+    $('#features .blue-circle').waypoint(function () {
+        $(this.element).addClass('animated fadeInUp')
+    }, {
+        offset: '50%'
+    });
+
+    $('.features-image img').waypoint(function () {
+        //console.log('you have entered');
+        $('.features-image img').addClass('animated tada')
+    }, {
+        offset: '50%'
+    });
+
+    $('#screenshots .col-sm-4').waypoint(function () {
+        $(this.element).addClass('animated zoomIn');
+        $(this.element).css({ 'opacity': 1 });
+    }, {
+        offset: '50%'
+    });
+
+    $('#download div.phone img').waypoint(function () {
+        $(this.element).addClass('animated fadeInRight');
+    }, {
+        offset: '50%'
+    });
+
+    $('#download .platforms > div').waypoint(function () {
+        $(this.element).addClass('animated fadeInUp');
+    }, {
+        offset: '50%'
+    })
 });
 
 smoothScroll.init({
