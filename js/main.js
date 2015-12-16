@@ -63,7 +63,50 @@ $(document).ready(function () {
         $(this.element).addClass('animated fadeInUp');
     }, {
         offset: '50%'
-    })
+    });
+
+    $('#form').bootstrapValidator({
+        message: 'This value is not valid',
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh',
+        },
+        fields: {
+            name: {
+                validators: {
+                    notEmpty: {
+                        message: 'This field is required and cannot be empty'
+                    },
+                }
+            },
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: 'This field is required and cannot be empty'
+                    },
+                    emailAddress: {
+                        message: 'The input is not a valid address'
+                    }
+                }
+            },
+            message: {
+                validators: {
+                    notEmpty: {
+                        message: 'The message cannot be empty, who sends an empty message???'
+                    }
+                }
+            }
+        }
+    }).on('success.form.bv', function (e) {
+        e.preventDefault();
+
+        var $form = $(e.target);
+        var bv = $form.data('bootstrapValidator');
+        $.post($form.attr('action'), $form.serialize(), function (result) {
+            console.log(result);
+        }, 'json');
+    });
 });
 
 smoothScroll.init({
