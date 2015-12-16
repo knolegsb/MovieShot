@@ -107,6 +107,10 @@ $(document).ready(function () {
             console.log(result);
         }, 'json');
     });
+
+    //$('#modal img').click(function () {
+    //    $('#modal .modal-body').dialog('close');
+    //});
 });
 
 smoothScroll.init({
